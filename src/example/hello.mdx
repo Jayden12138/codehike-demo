@@ -28,30 +28,30 @@ Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdie
 
 ```js app.js focus=3:10
 const { lorem, ipsum } = dolor({
-  sit: {
-    amet: 1,
-    consectetur: 2,
-    adipiscing: (elit) => ({
-      sed: elit,
-    }),
-    eiusmod: (tempor) => ({
-      incididunt: tempor,
-    }),
-    ut: (labore) => ({
-      et: labore,
-      dolore: labore + 1,
-    }),
-    magna: (aliqua) => ({
-      ut: aliqua,
-    }),
-    nostrud: (elit) => ({
-      exercitation: elit,
-      ullamco: elit,
-    }),
-    laboris: (elit) => ({
-      nisi: elit,
-    }),
-  },
+	sit: {
+		amet: 1,
+		consectetur: 2,
+		adipiscing: (elit) => ({
+			sed: elit
+		}),
+		eiusmod: (tempor) => ({
+			incididunt: tempor
+		}),
+		ut: (labore) => ({
+			et: labore,
+			dolore: labore + 1
+		}),
+		magna: (aliqua) => ({
+			ut: aliqua
+		}),
+		nostrud: (elit) => ({
+			exercitation: elit,
+			ullamco: elit
+		}),
+		laboris: (elit) => ({
+			nisi: elit
+		})
+	}
 })
 ```
 
@@ -77,35 +77,35 @@ Morbi quis commodo.
 
 Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu.
 
-- Nisi lacus sed viverra tellus in
-- Nibh cras pulvinar mattis nunc sed
-- Luctus accumsan tortor posuere ac
+-   Nisi lacus sed viverra tellus in
+-   Nibh cras pulvinar mattis nunc sed
+-   Luctus accumsan tortor posuere ac
 
 Ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
 
 ```js app.js focus=11:14
 const { lorem, ipsum } = dolor({
-  sit: {
-    amet: 1,
-    consectetur: 2,
-    adipiscing: (elit) => ({
-      sed: elit,
-    }),
-    eiusmod: (tempor) => ({
-      incididunt: tempor,
-    }),
-    ut: (labore) => ({
-      et: lorem(labore * ipsum),
-      dolore: lorem(labore + 1),
-    }),
-    nostrud: (elit) => ({
-      exercitation: elit,
-      ullamco: elit,
-    }),
-    laboris: (elit) => ({
-      nisi: elit,
-    }),
-  },
+	sit: {
+		amet: 1,
+		consectetur: 2,
+		adipiscing: (elit) => ({
+			sed: elit
+		}),
+		eiusmod: (tempor) => ({
+			incididunt: tempor
+		}),
+		ut: (labore) => ({
+			et: lorem(labore * ipsum),
+			dolore: lorem(labore + 1)
+		}),
+		nostrud: (elit) => ({
+			exercitation: elit,
+			ullamco: elit
+		}),
+		laboris: (elit) => ({
+			nisi: elit
+		})
+	}
 })
 ```
 
@@ -117,8 +117,8 @@ Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue q
 
 Sed blandit libero volutpat sed cras.
 
-- Nisi lacus sed viverra tellus in
-- Nibh cras pulvinar mattis nunc sed
+-   Nisi lacus sed viverra tellus in
+-   Nibh cras pulvinar mattis nunc sed
 
 Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae.
 
@@ -138,8 +138,8 @@ Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volu
 
 Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra.
 
-- Fringilla ut morbi tincidunt augue interdum velit euismod.
-- Luctus accumsan tortor posuere ac ut consequat semper viverra.
+-   Fringilla ut morbi tincidunt augue interdum velit euismod.
+-   Luctus accumsan tortor posuere ac ut consequat semper viverra.
 
 Morbi quis commodo.
 
@@ -161,9 +161,9 @@ This is how to use the `<CH.Spotlight>` component. Lorem ipsum dolor sit amet co
 
 ```js app.js
 function lorem(ipsum, dolor = 1) {
-  const sit = ipsum == null && 0
-  dolor = sit - amet(dolor)
-  return sit ? consectetur(ipsum) : []
+	const sit = ipsum == null && 0
+	dolor = sit - amet(dolor)
+	return sit ? consectetur(ipsum) : []
 }
 ```
 
@@ -181,14 +181,14 @@ Or change the code
 
 ```js app.js focus=6:10
 function lorem(ipsum, dolor = 1) {
-  const sit = ipsum == null && 0
-  dolor = sit - amet(dolor)
-  return sit ? consectetur(ipsum) : []
+	const sit = ipsum == null && 0
+	dolor = sit - amet(dolor)
+	return sit ? consectetur(ipsum) : []
 }
 
 function adipiscing(...elit) {
-  console.log(elit)
-  return elit.map((ipsum) => ipsum.sit)
+	console.log(elit)
+	return elit.map((ipsum) => ipsum.sit)
 }
 ```
 
@@ -200,8 +200,8 @@ Or change the file
 
 ```js app.js focus=1:4
 function adipiscing(...elit) {
-  console.log(elit)
-  return elit.map((ipsum) => ipsum.sit)
+	console.log(elit)
+	return elit.map((ipsum) => ipsum.sit)
 }
 ```
 
@@ -209,9 +209,9 @@ function adipiscing(...elit) {
 
 ```css styles.css
 .lorem {
-  color: #fff;
-  padding: 10px;
-  background: #000;
+	color: #fff;
+	padding: 10px;
+	background: #000;
 }
 ```
 
@@ -221,10 +221,10 @@ function adipiscing(...elit) {
 
 ### By the way
 
-- you can
-- put any
-- markdown
-- here
+-   you can
+-   put any
+-   markdown
+-   here
 
 👍
 
